@@ -356,7 +356,7 @@ const Home = () => {
                 <div className="col-4 col-sm-3">
                   <img
                     className="w-100 rounded-circle mb-3 mb-sm-0"
-                    src="img/menu-1.jpg"
+                    src="public/img/menu-1.jpg"
                     alt
                   />
                   <h5 className="menu-price">$5</h5>
@@ -373,7 +373,7 @@ const Home = () => {
                 <div className="col-4 col-sm-3">
                   <img
                     className="w-100 rounded-circle mb-3 mb-sm-0"
-                    src="img/menu-2.jpg"
+                    src="public/img/menu-2.jpg"
                     alt
                   />
                   <h5 className="menu-price">$7</h5>
@@ -390,7 +390,7 @@ const Home = () => {
                 <div className="col-4 col-sm-3">
                   <img
                     className="w-100 rounded-circle mb-3 mb-sm-0"
-                    src="img/menu-3.jpg"
+                    src="public/img/menu-3.jpg"
                     alt
                   />
                   <h5 className="menu-price">$9</h5>
@@ -410,7 +410,7 @@ const Home = () => {
                 <div className="col-4 col-sm-3">
                   <img
                     className="w-100 rounded-circle mb-3 mb-sm-0"
-                    src="img/menu-1.jpg"
+                    src="public/img/menu-1.jpg"
                     alt
                   />
                   <h5 className="menu-price">$5</h5>
@@ -427,7 +427,7 @@ const Home = () => {
                 <div className="col-4 col-sm-3">
                   <img
                     className="w-100 rounded-circle mb-3 mb-sm-0"
-                    src="img/menu-2.jpg"
+                    src="public/img/menu-2.jpg"
                     alt
                   />
                   <h5 className="menu-price">$7</h5>
@@ -444,7 +444,7 @@ const Home = () => {
                 <div className="col-4 col-sm-3">
                   <img
                     className="w-100 rounded-circle mb-3 mb-sm-0"
-                    src="img/menu-3.jpg"
+                    src="public/img/menu-3.jpg"
                     alt
                   />
                   <h5 className="menu-price">$9</h5>
