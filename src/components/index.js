@@ -14,7 +14,7 @@ const Home = () => {
                 className="navbar-brand-image img-fluid"
                 alt="Barista Cafe Template"
               />
-              Barista
+              Aksara
             </a>
             <button
               className="navbar-toggler"
@@ -60,7 +60,7 @@ const Home = () => {
                   className="btn custom-btn custom-border-btn"
                   href="reservation.html"
                 >
-                  <Reservation />
+                  Reservation
                   <i className="bi-arrow-up-right ms-2" />
                 </a>
               </div>
@@ -74,8 +74,8 @@ const Home = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-12 mx-auto">
-                <em className="small-text">welcome to Barista.co</em>
-                <h1>Cafe Klang</h1>
+                <em className="small-text">welcome to Aksara.co</em>
+                <h1>Aksara Cafe</h1>
                 <p className="text-white mb-4 pb-lg-2">
                   your <em>favourite</em> coffee daily lives.
                 </p>
@@ -110,31 +110,25 @@ const Home = () => {
                     Your browser does not support the video tag.
                   </video>
                   <div className="about-video-info d-flex flex-column">
-                    <h4 className="mt-auto">We Started Since 2009.</h4>
-                    <h4>Best Cafe in Klang.</h4>
+                    <h4 className="mt-auto">We Started Since 2020.</h4>
+                    <h4>Best Cafe in Airmadidi.</h4>
                   </div>
                 </div>
               </div>
               <div className="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-                <em className="text-white">Barista.co</em>
-                <h2 className="text-white mb-3">Cafe KL</h2>
+                <em className="text-white">Aksara.co</em>
+                <h2 className="text-white mb-3">Aksara Cafe</h2>
                 <p className="text-white">
-                  The café had been in the town for as long as anyone could
-                  remember, and it had become a beloved institution among the
-                  locals.
+                  we believe that every cup of coffee tells a story. Born from
+                  our love of flavor and community, we created a space where the
+                  aroma of fresh coffee and delicious food blends with laughter
+                  and togetherness. Come in, unwind, and be a part of our story.
                 </p>
                 <p className="text-white">
-                  The café was run by a friendly and hospitable couple, Mr. and
-                  Mrs. Johnson. Barista Cafe is free Bootstrap 5 HTML layout
-                  provided by{" "}
-                  <a
-                    rel="nofollow noreferrer"
-                    href="https://www.tooplate.com"
-                    target="_blank"
-                  >
-                    Tooplate
-                  </a>
-                  .
+                  We take pride in serving the best from local farmers and
+                  carefully selected quality ingredients. Every dish is crafted
+                  with care, creating an experience that delights the palate and
+                  warms the soul.
                 </p>
                 <a
                   href="#barista-team"
@@ -402,15 +396,16 @@ const Home = () => {
                           alt
                         />
                         <div className>
-                          <h6 className="text-white mb-0">Sandra</h6>
+                          <h6 className="text-white mb-0">Grace</h6>
                           <em className="text-white"> Customers</em>
                         </div>
                       </div>
                       <div className="reviews-block-info">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          The atmosphere at Aksara Cafe is simply unbeatable!
+                          The coffee is always rich and flavorful, and the staff
+                          makes you feel right at home. It’s my favorite spot to
+                          relax and catch up with friends. Highly recommend
                         </p>
                         <div className="d-flex border-top pt-3 mt-4">
                           <strong className="text-white">
@@ -438,15 +433,16 @@ const Home = () => {
                           alt
                         />
                         <div className>
-                          <h6 className="text-white mb-0">Don</h6>
+                          <h6 className="text-white mb-0">Fahjrikun</h6>
                           <em className="text-white"> Customers</em>
                         </div>
                       </div>
                       <div className="reviews-block-info">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          bsolutely love this place! The pastries are to die
+                          for, and the coffee is the perfect pick-me-up. The
+                          cozy vibe and friendly service keep me coming back
+                          week after week. A true hidden gem!
                         </p>
                         <div className="d-flex border-top pt-3 mt-4">
                           <strong className="text-white">
@@ -474,15 +470,16 @@ const Home = () => {
                           alt
                         />
                         <div className>
-                          <h6 className="text-white mb-0">Olivia</h6>
+                          <h6 className="text-white mb-0">Faithza</h6>
                           <em className="text-white"> Customers</em>
                         </div>
                       </div>
                       <div className="reviews-block-info">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          This cafe never disappoints! The ambiance is perfect
+                          for working or just unwinding with a book. The
+                          attention to detail in every cup of coffee is amazing,
+                          and the staff’s warmth makes every visit special.
                         </p>
                         <div className="d-flex border-top pt-3 mt-4">
                           <strong className="text-white">
@@ -528,7 +525,7 @@ const Home = () => {
                         name="name"
                         id="name"
                         className="form-control"
-                        placeholder="Jackson"
+                        placeholder="Faithza"
                         required
                       />
                     </div>
@@ -542,7 +539,7 @@ const Home = () => {
                         id="email"
                         pattern="[^ @]*@[^ @]*"
                         className="form-control"
-                        placeholder="Jack@gmail.com"
+                        placeholder="faithza@gmail.com"
                         required
                       />
                     </div>
@@ -590,7 +587,7 @@ const Home = () => {
                 <em className="text-white d-block mb-4">Where to find us?</em>
                 <strong className="text-white">
                   <i className="bi-geo-alt me-2" />
-                  Bandra West, Mumbai, Maharashtra 400050, India
+                  Airmadidi, Sulawesi Utara, Indonesia
                 </strong>
                 <ul className="social-icon mt-4">
                   <li className="social-icon-item">
@@ -612,17 +609,17 @@ const Home = () => {
                 <em className="text-white d-block mb-4">Contact</em>
                 <p className="d-flex mb-1">
                   <strong className="me-2">Phone:</strong>
-                  <a href="tel: 305-240-9671" className="site-footer-link">
-                    (65) 305 2409 671
+                  <a href="tel: 085339017033" className="site-footer-link">
+                    085339017033
                   </a>
                 </p>
                 <p className="d-flex">
                   <strong className="me-2">Email:</strong>
                   <a
-                    href="mailto:info@yourgmail.com"
+                    href="mailto:faithzaazalia@gmail.com"
                     className="site-footer-link"
                   >
-                    hello@barista.co
+                    Aksara@gmail.co
                   </a>
                 </p>
               </div>
@@ -637,12 +634,12 @@ const Home = () => {
                   <li className="d-flex">
                     Saturday
                     <span className="underline" />
-                    <strong>11:00 - 16:30</strong>
+                    <strong>Closed</strong>
                   </li>
                   <li className="d-flex">
                     Sunday
                     <span className="underline" />
-                    <strong>Closed</strong>
+                    <strong>11:00 - 16:30</strong>
                   </li>
                 </ul>
               </div>
