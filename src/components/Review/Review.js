@@ -58,7 +58,7 @@ const Review = () => {
                       alt=""
                     />
                     <div className>
-                      <h6 className="text-white mb-0">Fahjrikun</h6>
+                      <h6 className="text-white mb-0">Fajrikun</h6>
                       <em className="text-white"> Customers</em>
                     </div>
                   </div>
