@@ -2,6 +2,7 @@ const Home = () => {
   return (
     <div>
       <main>
+        {/*componen navbar*/}
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             <a
@@ -66,7 +67,7 @@ const Home = () => {
             </div>
           </div>
         </nav>
-
+        {/*componen hero/header : ini yg msh error*/}
         <section
           className="hero-section d-flex justify-content-center align-items-center"
           id="section_1"
@@ -96,7 +97,7 @@ const Home = () => {
           </div>
           <div className="hero-slides" />
         </section>
-
+        {/*componen about*/}
         <section className="about-section section-padding" id="section_2">
           <div className="section-overlay" />
           <div className="container">
@@ -141,7 +142,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*componen barista*/}
         <section
           className="barista-section section-padding section-bg"
           id="barista-team"
@@ -243,7 +244,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*componen menu*/}
         <section className="menu-section section-padding" id="section_3">
           <div className="container">
             <div className="row">
@@ -378,7 +379,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*componen review/testi*/}
         <section
           className="reviews-section section-padding section-bg"
           id="section_4"
@@ -505,7 +506,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*componen contactus*/}
         <section className="contact-section section-padding" id="section_5">
           <div className="container">
             <div className="row">
@@ -585,7 +586,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*componen footer*/}
         <footer className="site-footer">
           <div className="container">
             <div className="row">
