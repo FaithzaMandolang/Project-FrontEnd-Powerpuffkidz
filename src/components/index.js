@@ -40,7 +40,46 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="hero-slides" />
+          <div className="hero-slides vegas-container" style={{ padding: 0 }}>
+            <div
+              className="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out"
+              style={{ transition: "1000ms" }}
+            >
+              <div
+                className="vegas-slide-inner vegas-animation-kenburns"
+                style={{
+                  backgroundImage:
+                    'url("images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg")',
+                  backgroundColor: "rgba(0, 0, 0, 0)",
+                  backgroundPosition: "center center",
+                  backgroundSize: "cover",
+                  animationDuration: "5000ms",
+                }}
+              />
+            </div>
+            <div
+              className="vegas-slide vegas-transition-fade vegas-transition-fade-in"
+              style={{ transition: "1000ms" }}
+            >
+              <div
+                className="vegas-slide-inner vegas-animation-kenburns"
+                style={{
+                  backgroundImage:
+                    'url("images/slides/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg")',
+                  backgroundColor: "rgba(0, 0, 0, 0)",
+                  backgroundPosition: "center center",
+                  backgroundSize: "cover",
+                  animationDuration: "5000ms",
+                }}
+              />
+            </div>
+            <div className="vegas-content-scrollable">
+              <div
+                className="vegas-content"
+                style={{ overflow: "visible", padding: 0 }}
+              />
+            </div>
+          </div>
         </section>
         {/*componen about*/}
         <About />
