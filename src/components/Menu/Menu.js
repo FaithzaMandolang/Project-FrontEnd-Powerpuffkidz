@@ -13,7 +13,7 @@ const Menu = () => {
                 <div className="d-flex">
                   <h6>Pancakes</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$12.50</strong>
+                  <strong className="ms-auto">$15.50</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
                   <small>Fresh brewed coffee and steamed milk</small>
