@@ -2,6 +2,7 @@ const Reservation = () => {
   return (
     <div>
       <main>
+        {/*componen navbar:ini nnti import yg navbar dari index jo dpe komponen spya so nd mo bekg komponen yg baru ini*/}
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             <a
@@ -66,6 +67,7 @@ const Reservation = () => {
             </div>
           </div>
         </nav>
+        {/*componen booking*/}
         <section className="booking-section section-padding">
           <div className="container">
             <div className="row">
@@ -167,6 +169,7 @@ const Reservation = () => {
             </div>
           </div>
         </section>
+        {/*componen footer:ini leh sma dg navbar, nnti ambe yg di index*/}
         <footer className="site-footer">
           <div className="container">
             <div className="row">
