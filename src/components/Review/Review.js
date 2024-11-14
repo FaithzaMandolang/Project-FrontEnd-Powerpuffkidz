@@ -18,7 +18,7 @@ const Review = () => {
                     <img
                       src="images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg"
                       className="reviews-block-image img-fluid"
-                      alt
+                      alt=""
                     />
                     <div className>
                       <h6 className="text-white mb-0">Grace</h6>
@@ -55,7 +55,7 @@ const Review = () => {
                     <img
                       src="images/reviews/senior-man-white-sweater-eyeglasses.jpg"
                       className="reviews-block-image img-fluid"
-                      alt
+                      alt=""
                     />
                     <div className>
                       <h6 className="text-white mb-0">Fahjrikun</h6>
@@ -92,7 +92,7 @@ const Review = () => {
                     <img
                       src="images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg"
                       className="reviews-block-image img-fluid"
-                      alt
+                      alt=""
                     />
                     <div className>
                       <h6 className="text-white mb-0">Faithza</h6>
