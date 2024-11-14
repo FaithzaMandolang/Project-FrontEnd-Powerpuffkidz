@@ -1,4 +1,3 @@
-import Reservation from "./reservasi";
 const Home = () => {
   return (
     <div>
@@ -67,6 +66,7 @@ const Home = () => {
             </div>
           </div>
         </nav>
+
         <section
           className="hero-section d-flex justify-content-center align-items-center"
           id="section_1"
@@ -96,6 +96,7 @@ const Home = () => {
           </div>
           <div className="hero-slides" />
         </section>
+
         <section className="about-section section-padding" id="section_2">
           <div className="section-overlay" />
           <div className="container">
@@ -140,6 +141,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section
           className="barista-section section-padding section-bg"
           id="barista-team"
@@ -241,6 +243,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section className="menu-section section-padding" id="section_3">
           <div className="container">
             <div className="row">
@@ -375,6 +378,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section
           className="reviews-section section-padding section-bg"
           id="section_4"
@@ -501,6 +505,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section className="contact-section section-padding" id="section_5">
           <div className="container">
             <div className="row">
@@ -580,6 +585,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <footer className="site-footer">
           <div className="container">
             <div className="row">
