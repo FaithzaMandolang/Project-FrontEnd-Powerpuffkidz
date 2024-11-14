@@ -89,7 +89,7 @@ const Booking = () => {
                     <img
                       src="images/barman-with-fruits.jpg"
                       className="booking-form-image img-fluid"
-                      alt
+                      alt=""
                     />
                   </div>
                 </div>
