@@ -63,12 +63,7 @@ const Review = () => {
                     </div>
                   </div>
                   <div className="reviews-block-info">
-                    <p>
-                      bsolutely love this place! The pastries are to die for,
-                      and the coffee is the perfect pick-me-up. The cozy vibe
-                      and friendly service keep me coming back week after week.
-                      A true hidden gem!
-                    </p>
+                    <p>Mantappp BosssQuuuu</p>
                     <div className="d-flex border-top pt-3 mt-4">
                       <strong className="text-white">
                         4.5 <small className="ms-2">Rating</small>
