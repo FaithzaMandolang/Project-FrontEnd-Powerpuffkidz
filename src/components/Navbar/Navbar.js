@@ -8,11 +8,11 @@ const Navbar = () => {
             href="index.html"
           >
             <img
-              src="images/coffee-beans.png"
+              src="images/coffee-beans.png" //convert jdi base64
               className="navbar-brand-image img-fluid"
               alt="Barista Cafe Template"
             />
-            Barista
+            Barista {/*ini se mso */}
           </a>
           <button
             className="navbar-toggler"
@@ -29,27 +29,27 @@ const Navbar = () => {
             <ul className="navbar-nav ms-lg-auto">
               <li className="nav-item">
                 <a className="nav-link click-scroll active" href="#section_1">
-                  Home
+                  Home {/*ini se mso */}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_2">
-                  About
+                  About {/*ini se mso */}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_3">
-                  Our Menu
+                  Our Menu {/*ini se mso */}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_4">
-                  Reviews
+                  Reviews {/*ini se mso */}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_5">
-                  Contact
+                  Contact {/*ini se mso */}
                 </a>
               </li>
             </ul>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 className="btn custom-btn custom-border-btn"
                 href="reservation.html"
               >
-                Reservation
+                Reservation {/*ini se mso */}
                 <i className="bi-arrow-up-right ms-2" />
               </a>
             </div>
