@@ -1,4 +1,20 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+  const [Hero, setHero] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const NavbarRef = ref(db, "Hero/");
+    onValue(
+      NavbarRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setHero(data);
+      },
+      []
+    );
+  });
   return (
     <section
       className="hero-section d-flex justify-content-center align-items-center"
@@ -7,24 +23,26 @@ const Hero = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12 mx-auto">
-            <em className="small-text">welcome to Aksara.co</em> {/*ini ubah */}
-            <h1>Aksara Cafe</h1> {/*ini ubah */}
+            <em className="small-text">{Hero.title}</em>
+            <h1>{Hero.judul}</h1>
             <p className="text-white mb-4 pb-lg-2">
-              your <em>favourite</em> coffee daily lives.
+              {Hero.text1}
+              <em>{Hero.text2}</em>
+              {Hero.text3}
             </p>{" "}
             {/*ini ubah */}
             <a
               className="btn custom-btn custom-border-btn smoothscroll me-3"
               href="#section_2"
             >
-              Our Story
+              {Hero.btn1}
             </a>{" "}
             {/*ini ubah */}
             <a
               className="btn custom-btn smoothscroll me-2 mb-2"
               href="#section_3"
             >
-              <strong>Check Menu</strong> {/*ini ubah */}
+              <strong>{Hero.btn2}</strong>
             </a>
           </div>
         </div>
