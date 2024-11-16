@@ -1,4 +1,20 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [Navbar, setNavbar] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const NavbarRef = ref(db, "Navbar");
+    onValue(
+      NavbarRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setNavbar(data);
+      },
+      []
+    );
+  });
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: 149 }}>
       <nav className="navbar navbar-expand-lg" style={{}}>
@@ -12,7 +28,7 @@ const Navbar = () => {
               className="navbar-brand-image img-fluid"
               alt="Barista Cafe Template"
             />
-            Barista {/*ini se mso */}
+            {Navbar.nama}
           </a>
           <button
             className="navbar-toggler"
@@ -29,27 +45,27 @@ const Navbar = () => {
             <ul className="navbar-nav ms-lg-auto">
               <li className="nav-item">
                 <a className="nav-link click-scroll active" href="#section_1">
-                  Home {/*ini se mso */}
+                  {Navbar.button1}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_2">
-                  About {/*ini se mso */}
+                  {Navbar.button2}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_3">
-                  Our Menu {/*ini se mso */}
+                  {Navbar.button3}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_4">
-                  Reviews {/*ini se mso */}
+                  {Navbar.button4}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_5">
-                  Contact {/*ini se mso */}
+                  {Navbar.button5}
                 </a>
               </li>
             </ul>
@@ -58,7 +74,7 @@ const Navbar = () => {
                 className="btn custom-btn custom-border-btn"
                 href="reservation.html"
               >
-                Reservation {/*ini se mso */}
+                {Navbar.button6}
                 <i className="bi-arrow-up-right ms-2" />
               </a>
             </div>
