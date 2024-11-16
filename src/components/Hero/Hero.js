@@ -7,22 +7,24 @@ const Hero = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12 mx-auto">
-            <em className="small-text">welcome to Aksara.co</em>
-            <h1>Aksara Cafe</h1>
+            <em className="small-text">welcome to Aksara.co</em> {/*ini ubah */}
+            <h1>Aksara Cafe</h1> {/*ini ubah */}
             <p className="text-white mb-4 pb-lg-2">
               your <em>favourite</em> coffee daily lives.
-            </p>
+            </p>{" "}
+            {/*ini ubah */}
             <a
               className="btn custom-btn custom-border-btn smoothscroll me-3"
               href="#section_2"
             >
               Our Story
-            </a>
+            </a>{" "}
+            {/*ini ubah */}
             <a
               className="btn custom-btn smoothscroll me-2 mb-2"
               href="#section_3"
             >
-              <strong>Check Menu</strong>
+              <strong>Check Menu</strong> {/*ini ubah */}
             </a>
           </div>
         </div>
