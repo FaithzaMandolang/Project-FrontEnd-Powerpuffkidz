@@ -7,62 +7,72 @@ const Menu = () => {
             <div className="menu-block-wrap">
               <div className="text-center mb-4 pb-lg-2">
                 <em className="text-white">Delicious Menu</em>
-                <h4 className="text-white">Breakfast</h4>
+                <h4 className="text-white">{Menu.Breakfast.nama}</h4>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
-                  <h6>Pancakes</h6>
+                  <h6>{Menu.Breakfast.Pancake.nama}</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$15.50</strong>
+                  <strong className="ms-auto">
+                    {Menu.Breakfast.Pancake.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Menu.Breakfast.Pancake.ket}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
                 <div className="d-flex">
-                  <h6>Toasted Waffle</h6>
+                  <h6>{Menu.Breakfast.ToastedWaffles.nama}</h6>
                   <span className="underline" />
                   <strong className="text-white ms-auto">
                     <del>$16.50</del>
                   </strong>
-                  <strong className="ms-2">$12.00</strong>
+                  <strong className="ms-2">
+                    {Menu.Breakfast.ToastedWaffles.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Brewed coffee and steamed milk</small>
+                  <small>{Menu.Breakfast.ToastedWaffles.ket}</small>
                 </div>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
                   <h6>
-                    Fried Chips
+                    {Menu.Breakfast.FriedChips.nama}
                     <span className="badge ms-3">Recommend</span>
                   </h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$15.0</strong>
+                  <strong className="ms-auto">
+                    {Menu.Breakfast.FriedChips.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Menu.Breakfast.FriedChips.ket}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
                 <div className="d-flex">
-                  <h6>Pancakes</h6>
+                  <h6>{Menu.Breakfast.Cereal.nama}</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$12.50</strong>
+                  <strong className="ms-auto">
+                    {Menu.Breakfast.Cereal.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Menu.Breakfast.Cereal.ket}</small>
                 </div>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
-                  <h6>Banana Cakes</h6>
+                  <h6>{Menu.Breakfast.BananaCake.nama}</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$18.0</strong>
+                  <strong className="ms-auto">
+                    {Menu.Breakfast.BananaCake.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Menu.Breakfast.BananaCake.ket}</small>
                 </div>
               </div>
             </div>
@@ -71,62 +81,70 @@ const Menu = () => {
             <div className="menu-block-wrap">
               <div className="text-center mb-4 pb-lg-2">
                 <em className="text-white">Favourite Menu</em>
-                <h4 className="text-white">Coffee</h4>
+                <h4 className="text-white">{Menu.Coffee.nama}</h4>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
-                  <h6>Latte</h6>
+                  <h6>{Menu.Coffee.Latte.nama}</h6>
                   <span className="underline" />
                   <strong className="text-white ms-auto">
                     <del>$12.50</del>
                   </strong>
-                  <strong className="ms-2">$7.50</strong>
+                  <strong className="ms-2">{Menu.Coffee.Latte.price}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Menu.Coffee.Latte.ket}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
                 <div className="d-flex">
                   <h6>
-                    White Coffee
+                    {Menu.Coffee.WhiteCoffee.nama}
                     <span className="badge ms-3">Recommend</span>
                   </h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$5.90</strong>
+                  <strong className="ms-auto">
+                    {Menu.Coffee.WhiteCoffee.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Brewed coffee and steamed milk</small>
+                  <small>{Menu.Coffee.WhiteCoffee.ket}</small>
                 </div>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
-                  <h6>Chocolate Milk</h6>
+                  <h6>{Menu.Coffee.ChocolateMilk.nama}</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$5.50</strong>
+                  <strong className="ms-auto">
+                    {Menu.Coffee.ChocolateMilk.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Menu.Coffee.ChocolateMilk.ket}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
                 <div className="d-flex">
-                  <h6>Greentea</h6>
+                  <h6>{Menu.Coffee.Greentea.nama}</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$7.50</strong>
+                  <strong className="ms-auto">
+                    {Menu.Coffee.Greentea.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Menu.Coffee.Greentea.ket}</small>
                 </div>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
-                  <h6>Dark Chocolate</h6>
+                  <h6>{Menu.Coffee.DarkChocolate.nama}</h6>
                   <span className="underline" />
-                  <strong className="ms-auto">$7.25</strong>
+                  <strong className="ms-auto">
+                    {Menu.Coffee.DarkChocolate.price}
+                  </strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Menu.Coffee.DarkChocolate.ket}</small>
                 </div>
               </div>
             </div>
