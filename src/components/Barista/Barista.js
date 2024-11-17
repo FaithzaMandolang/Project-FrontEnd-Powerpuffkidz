@@ -1,4 +1,19 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 const Barista = () => {
+  const [Barista, setBarista] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const BaristaRef = ref(db, "Barista/");
+    onValue(
+      BaristaRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setBarista(data);
+      },
+      []
+    );
+  });
   return (
     <section
       className="barista-section section-padding section-bg"
@@ -7,8 +22,8 @@ const Barista = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12 col-12 text-center mb-4 pb-lg-2">
-            <em className="text-white">Creative Baristas</em>
-            <h2 className="text-white">Meet People</h2>
+            <em className="text-white">{Barista.opening1}</em>
+            <h2 className="text-white">{Barista.opening2}</h2>
           </div>
           <div className="col-lg-3 col-md-6 col-12 mb-4">
             <div className="team-block-wrap">
