@@ -28,7 +28,7 @@ const Navbar = () => {
               className="navbar-brand-image img-fluid"
               alt="Barista Cafe Template"
             />
-            {Navbar.nama}
+            Aksara
           </a>
           <button
             className="navbar-toggler"
@@ -45,27 +45,27 @@ const Navbar = () => {
             <ul className="navbar-nav ms-lg-auto">
               <li className="nav-item">
                 <a className="nav-link click-scroll active" href="#section_1">
-                  {Navbar.button1}
+                  Home
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_2">
-                  {Navbar.button2}
+                  About Us
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_3">
-                  {Navbar.button3}
+                  Our Menu
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_4">
-                  {Navbar.button4}
+                  Testimonials
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link click-scroll inactive" href="#section_5">
-                  {Navbar.button5}
+                  Contact
                 </a>
               </li>
             </ul>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 className="btn custom-btn custom-border-btn"
                 href="reservation.html"
               >
-                {Navbar.button6}
+                Reservation
                 <i className="bi-arrow-up-right ms-2" />
               </a>
             </div>
