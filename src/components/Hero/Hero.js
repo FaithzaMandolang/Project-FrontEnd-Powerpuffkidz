@@ -23,26 +23,24 @@ const Hero = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12 mx-auto">
-            <em className="small-text">{Hero.title}</em>
-            <h1>{Hero.judul}</h1>
+            <em className="small-text">{Hero.opening}</em>
+            <h1>{Hero.nama}</h1>
             <p className="text-white mb-4 pb-lg-2">
               {Hero.text1}
               <em>{Hero.text2}</em>
               {Hero.text3}
             </p>{" "}
-            {/*ini ubah */}
             <a
               className="btn custom-btn custom-border-btn smoothscroll me-3"
               href="#section_2"
             >
-              {Hero.btn1}
+              {Hero.button1}
             </a>{" "}
-            {/*ini ubah */}
             <a
               className="btn custom-btn smoothscroll me-2 mb-2"
               href="#section_3"
             >
-              <strong>{Hero.btn2}</strong>
+              <strong>{Hero.button2}</strong>
             </a>
           </div>
         </div>

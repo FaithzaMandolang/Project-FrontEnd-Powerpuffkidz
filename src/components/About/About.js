@@ -38,21 +38,11 @@ const About = () => {
           </div>
           <div className="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
             <em className="text-white">{About.nama}</em>
-            <h2 className="text-white mb-3">{About.since}</h2>
+            <h2 className="text-white mb-3">{About.judul}</h2>
 
-            <p className="text-white">
-              we believe that every cup of coffee tells a story. Born from our
-              love of flavor and community, we created a space where the aroma
-              of fresh coffee and delicious food blends with laughter and
-              togetherness. Come in, unwind, and be a part of our story.
-            </p>
+            <p className="text-white">{About.paragraf1}</p>
 
-            <p className="text-white">
-              We take pride in serving the best from local farmers and carefully
-              selected quality ingredients. Every dish is crafted with care,
-              creating an experience that delights the palate and warms the
-              soul.
-            </p>
+            <p className="text-white">{About.paragraf2}</p>
 
             <a
               href="#barista-team"
