@@ -1,11 +1,29 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const ContactUs = () => {
+  const [ContactUs, setContactUs] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const ContactUsRef = ref(db, "ContactUs/");
+    onValue(
+      ContactUsRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setContactUs(data);
+      },
+      []
+    );
+  });
+
   return (
     <section className="contact-section section-padding" id="section_5">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-12">
-            <em className="text-white">Say Hello</em>
-            <h2 className="text-white mb-4 pb-lg-2">Contact</h2>
+            <em className="text-white">{ContactUs.text1}</em>
+            <h2 className="text-white mb-4 pb-lg-2">{ContactUs.text2}</h2>{" "}
+            {/**/}
           </div>
           <div className="col-lg-6 col-12">
             <form
@@ -17,7 +35,8 @@ const ContactUs = () => {
               <div className="row">
                 <div className="col-lg-6 col-12">
                   <label htmlFor="name" className="form-label">
-                    Name <sup className="text-danger">*</sup>
+                    {ContactUs.label1}
+                    <sup className="text-danger">*</sup> {/**/}
                   </label>
                   <input
                     type="text"
@@ -30,7 +49,7 @@ const ContactUs = () => {
                 </div>
                 <div className="col-lg-6 col-12">
                   <label htmlFor="email" className="form-label">
-                    Email Address
+                    {ContactUs.label2}
                   </label>
                   <input
                     type="email"
@@ -44,7 +63,7 @@ const ContactUs = () => {
                 </div>
                 <div className="col-12">
                   <label htmlFor="message" className="form-label">
-                    How can we help?
+                    {ContactUs.label3}
                   </label>
                   <textarea
                     name="message"
@@ -59,7 +78,7 @@ const ContactUs = () => {
               </div>
               <div className="col-lg-5 col-12 mx-auto mt-3">
                 <button type="submit" className="form-control">
-                  Send Message
+                  {ContactUs.btn1}
                 </button>
               </div>
             </form>
