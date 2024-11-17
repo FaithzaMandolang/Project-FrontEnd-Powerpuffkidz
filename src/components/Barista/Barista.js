@@ -1,4 +1,19 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 const Barista = () => {
+  const [Barista, setBarista] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const BaristaRef = ref(db, "Barista/");
+    onValue(
+      BaristaRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setBarista(data);
+      },
+      []
+    );
+  });
   return (
     <section
       className="barista-section section-padding section-bg"
@@ -7,21 +22,19 @@ const Barista = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12 col-12 text-center mb-4 pb-lg-2">
-            <em className="text-white">Creative Baristas</em>
-            <h2 className="text-white">Meet People</h2>
+            <em className="text-white">{Barista.opening1}</em>
+            <h2 className="text-white">{Barista.opening2}</h2>
           </div>
           <div className="col-lg-3 col-md-6 col-12 mb-4">
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Steve</h4>
+                  <h4 className="text-white mb-0">{Barista.barista1.name}</h4>
                   <p className="badge ms-4">
-                    <em>Boss</em>
+                    <em>{Barista.barista1.position}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily lives tempor.
-                </p>
+                <p className="text-white mb-0">{Barista.barista1.pesan}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
@@ -36,14 +49,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Sandra</h4>
+                  <h4 className="text-white mb-0">{Barista.barista2.name}</h4>
                   <p className="badge ms-4">
-                    <em>Manager</em>
+                    <em>{Barista.barista2.position}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily lives.
-                </p>
+                <p className="text-white mb-0">{Barista.barista2.pesan}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
@@ -58,14 +69,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Jackson</h4>
+                  <h4 className="text-white mb-0">{Barista.barista3.name}</h4>
                   <p className="badge ms-4">
-                    <em>Senior</em>
+                    <em>{Barista.barista3.position}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily lives.
-                </p>
+                <p className="text-white mb-0">{Barista.barista3.pesan}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
@@ -80,14 +89,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Michelle</h4>
+                  <h4 className="text-white mb-0">{Barista.barista4.name}</h4>
                   <p className="badge ms-4">
-                    <em>Barista</em>
+                    <em>{Barista.barista4.position}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily consectetur.
-                </p>
+                <p className="text-white mb-0">{Barista.barista4.pesan}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
