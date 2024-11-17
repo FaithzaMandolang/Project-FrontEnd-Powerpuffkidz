@@ -23,7 +23,6 @@ const ContactUs = () => {
           <div className="col-lg-12 col-12">
             <em className="text-white">{ContactUs.text1}</em>
             <h2 className="text-white mb-4 pb-lg-2">{ContactUs.text2}</h2>{" "}
-            {/**/}
           </div>
           <div className="col-lg-6 col-12">
             <form
@@ -36,7 +35,7 @@ const ContactUs = () => {
                 <div className="col-lg-6 col-12">
                   <label htmlFor="name" className="form-label">
                     {ContactUs.label1}
-                    <sup className="text-danger">*</sup> {/**/}
+                    <sup className="text-danger">*</sup>
                   </label>
                   <input
                     type="text"
