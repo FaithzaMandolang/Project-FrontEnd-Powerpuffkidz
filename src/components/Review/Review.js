@@ -37,20 +37,16 @@ const Review = () => {
                       alt=""
                     />
                     <div className>
-                      <h6 className="text-white mb-0">Grace</h6>
-                      <em className="text-white"> Customers</em>
+                      <h6 className="text-white mb-0">{Review.cos1}</h6>
+                      <em className="text-white">{Review.role1}</em>
                     </div>
                   </div>
                   <div className="reviews-block-info">
-                    <p>
-                      The atmosphere at Aksara Cafe is simply unbeatable! The
-                      coffee is always rich and flavorful, and the staff makes
-                      you feel right at home. It’s my favorite spot to relax and
-                      catch up with friends. Highly recommend
-                    </p>
+                    <p>{Review.testi1}</p>
                     <div className="d-flex border-top pt-3 mt-4">
                       <strong className="text-white">
-                        4.5 <small className="ms-2">Rating</small>
+                        {Review.rate1}{" "}
+                        <small className="ms-2">{Review.rating}</small>
                       </strong>
                       <div className="reviews-group ms-auto">
                         <i className="bi-star-fill" />
@@ -74,15 +70,16 @@ const Review = () => {
                       alt=""
                     />
                     <div className>
-                      <h6 className="text-white mb-0">Fajrikun</h6>
-                      <em className="text-white"> Customers</em>
+                      <h6 className="text-white mb-0">{Review.cos2}</h6>
+                      <em className="text-white">{Review.role1}</em>
                     </div>
                   </div>
                   <div className="reviews-block-info">
-                    <p>Mantappp BosssQuuuu</p>
+                    <p>{Review.testi2}</p>
                     <div className="d-flex border-top pt-3 mt-4">
                       <strong className="text-white">
-                        4.5 <small className="ms-2">Rating</small>
+                        {Review.rate2}{" "}
+                        <small className="ms-2">{Review.rating}</small>
                       </strong>
                       <div className="reviews-group ms-auto">
                         <i className="bi-star-fill" />
@@ -106,20 +103,16 @@ const Review = () => {
                       alt=""
                     />
                     <div className>
-                      <h6 className="text-white mb-0">Faithza</h6>
-                      <em className="text-white"> Customers</em>
+                      <h6 className="text-white mb-0">{Review.cos3}</h6>
+                      <em className="text-white">{Review.role1}</em>
                     </div>
                   </div>
                   <div className="reviews-block-info">
-                    <p>
-                      This cafe never disappoints! The ambiance is perfect for
-                      working or just unwinding with a book. The attention to
-                      detail in every cup of coffee is amazing, and the staff’s
-                      warmth makes every visit special.
-                    </p>
+                    <p>{Review.testi3}</p>
                     <div className="d-flex border-top pt-3 mt-4">
                       <strong className="text-white">
-                        4.5 <small className="ms-2">Rating</small>
+                        {Review.rate1}
+                        <small className="ms-2">{Review.rating}</small>
                       </strong>
                       <div className="reviews-group ms-auto">
                         <i className="bi-star-fill" />
