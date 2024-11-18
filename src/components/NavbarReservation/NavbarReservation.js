@@ -28,13 +28,14 @@ const NavbarReservation = () => {
             <img
               src={`data:image/jpeg;base64,${Navbar.logo}`}
               className="navbar-brand-image img-fluid"
-              alt
+              alt=""
             />
-            Barista.co
+            Aksara.co
           </a>
           <button
             className="navbar-toggler"
-            type="button"
+            type="button "
+            onClick={() => navigate("/")}
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
@@ -45,36 +46,37 @@ const NavbarReservation = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-lg-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="index.html#section_1">
+              <li className="nav-item" onClick={() => navigate("/")}>
+                <a className="nav-link" href="#section_1">
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="index.html#section_2">
+              <li className="nav-item" onClick={() => navigate("/")}>
+                <a className="nav-link" href="#section_2">
                   About us
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="index.html#section_3">
+              <li className="nav-item" onClick={() => navigate("/")}>
+                <a className="nav-link" href="#section_3">
                   Our Menu
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="index.html#section_4">
+              <li className="nav-item" onClick={() => navigate("/")}>
+                <a className="nav-link" href="#section_4">
                   Testimonials
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="index.html#section_5">
+              <li className="nav-item" onClick={() => navigate("/")}>
+                <a className="nav-link" href="#section_5">
                   Contact
                 </a>
               </li>
             </ul>
-            <div className="ms-lg-3">
-              <button onClick={() => navigate("/reservation")}>
+            <div className="ms-lg-3" onClick={() => navigate("/reservation")}>
+              <a className="btn custom-btn custom-border-btn" href="">
                 Reservation
-              </button>
+                <i className="bi-arrow-up-right ms-2" />
+              </a>
             </div>
           </div>
         </div>

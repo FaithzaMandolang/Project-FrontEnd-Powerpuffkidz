@@ -17,7 +17,6 @@ const Navbar = () => {
     );
   });
   const navigate = useNavigate();
-
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: 149 }}>
       <nav className="navbar navbar-expand-lg" style={{}}>
@@ -31,7 +30,7 @@ const Navbar = () => {
               className="navbar-brand-image img-fluid"
               alt=""
             />
-            Aksara
+            Aksara.co
           </a>
           <button
             className="navbar-toggler"
@@ -72,10 +71,11 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <div className="ms-lg-3">
-              <button onClick={() => navigate("/reservation")}>
+            <div className="ms-lg-3" onClick={() => navigate("/reservation")}>
+              <a className="btn custom-btn custom-border-btn" href="">
                 Reservation
-              </button>
+                <i className="bi-arrow-up-right ms-2" />
+              </a>
             </div>
           </div>
         </div>
