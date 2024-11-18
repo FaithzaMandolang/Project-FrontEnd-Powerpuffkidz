@@ -36,8 +36,8 @@ const Menu = () => {
           <div className="col-lg-6 col-12 mb-4 mb-lg-0">
             <div className="menu-block-wrap">
               <div className="text-center mb-4 pb-lg-2">
-                <em className="text-white">Delicious Menu</em>
-                <h4 className="text-white">Breakfast</h4>
+                <em className="text-white">{Breakfast.judul1}</em>
+                <h4 className="text-white">{Breakfast.judul2}</h4>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
@@ -46,7 +46,7 @@ const Menu = () => {
                   <strong className="ms-auto">{Breakfast.price1}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Breakfast.ket1}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
@@ -54,25 +54,25 @@ const Menu = () => {
                   <h6>{Breakfast.nama2}</h6>
                   <span className="underline" />
                   <strong className="text-white ms-auto">
-                    <del>$16.50</del>
+                    <del>{Breakfast.dis}</del>
                   </strong>
                   <strong className="ms-2">{Breakfast.price2}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Brewed coffee and steamed milk</small>
+                  <small>{Breakfast.ket2}</small>
                 </div>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
                   <h6>
                     {Breakfast.nama3}
-                    <span className="badge ms-3">Recommend</span>
+                    <span className="badge ms-3">{Breakfast.recom}</span>
                   </h6>
                   <span className="underline" />
                   <strong className="ms-auto">{Breakfast.price3}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Breakfast.ket3}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
@@ -82,7 +82,7 @@ const Menu = () => {
                   <strong className="ms-auto">{Breakfast.price4}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Breakfast.ket4}</small>
                 </div>
               </div>
               <div className="menu-block">
@@ -92,7 +92,7 @@ const Menu = () => {
                   <strong className="ms-auto">{Breakfast.price5}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Breakfast.ket5}</small>
                 </div>
               </div>
             </div>
@@ -100,33 +100,33 @@ const Menu = () => {
           <div className="col-lg-6 col-12">
             <div className="menu-block-wrap">
               <div className="text-center mb-4 pb-lg-2">
-                <em className="text-white">Favourite Menu</em>
-                <h4 className="text-white">Coffee</h4>
+                <em className="text-white">{Coffee.judul1}</em>
+                <h4 className="text-white">{Coffee.judul2}</h4>
               </div>
               <div className="menu-block">
                 <div className="d-flex">
                   <h6>{Coffee.kopi1}</h6>
                   <span className="underline" />
                   <strong className="text-white ms-auto">
-                    <del>$12.50</del>
+                    <del>{Coffee.dis}</del>
                   </strong>
                   <strong className="ms-2">{Coffee.harga1}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Coffee.ket1}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
                 <div className="d-flex">
                   <h6>
                     {Coffee.kopi2}
-                    <span className="badge ms-3">Recommend</span>
+                    <span className="badge ms-3">{Coffee.rekom}</span>
                   </h6>
                   <span className="underline" />
                   <strong className="ms-auto">{Coffee.harga2}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Brewed coffee and steamed milk</small>
+                  <small>{Coffee.ket2}</small>
                 </div>
               </div>
               <div className="menu-block">
@@ -136,7 +136,7 @@ const Menu = () => {
                   <strong className="ms-auto">{Coffee.harga3}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Coffee.ket3}</small>
                 </div>
               </div>
               <div className="menu-block my-4">
@@ -146,7 +146,7 @@ const Menu = () => {
                   <strong className="ms-auto">{Coffee.harga4}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
+                  <small>{Breakfast.ket4}</small>
                 </div>
               </div>
               <div className="menu-block">
@@ -156,7 +156,7 @@ const Menu = () => {
                   <strong className="ms-auto">{Coffee.harga5}</strong>
                 </div>
                 <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
+                  <small>{Coffee.ket5}</small>
                 </div>
               </div>
             </div>
