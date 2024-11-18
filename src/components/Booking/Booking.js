@@ -1,4 +1,20 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Booking = () => {
+  const [Booking, setBooking] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const BookingRef = ref(db, "Booking/");
+    onValue(
+      BookingRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setBooking(data);
+      },
+      []
+    );
+  });
   return (
     <section className="booking-section section-padding">
       <div className="container">
@@ -14,8 +30,8 @@ const Booking = () => {
                     role="form"
                   >
                     <div className="text-center mb-4 pb-lg-2">
-                      <em className="text-white">Fill out the booking form</em>
-                      <h2 className="text-white">Book a table</h2>
+                      <em className="text-white">{Booking.opening1}</em>
+                      <h2 className="text-white">{Booking.judul}</h2>
                     </div>
                     <div className="booking-form-body">
                       <div className="row">
@@ -77,7 +93,7 @@ const Booking = () => {
                         </div>
                         <div className="col-lg-4 col-md-10 col-8 mx-auto mt-2">
                           <button type="submit" className="form-control">
-                            Submit
+                            {Booking.btn}
                           </button>
                         </div>
                       </div>
