@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
 
@@ -15,6 +16,8 @@ const Navbar = () => {
       []
     );
   });
+  const navigate = useNavigate();
+
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: 149 }}>
       <nav className="navbar navbar-expand-lg" style={{}}>
@@ -70,13 +73,9 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="ms-lg-3">
-              <a
-                className="btn custom-btn custom-border-btn"
-                href="reservation.html"
-              >
+              <button onClick={() => navigate("/reservation")}>
                 Reservation
-                <i className="bi-arrow-up-right ms-2" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
