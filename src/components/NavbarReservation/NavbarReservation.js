@@ -1,4 +1,20 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const NavbarReservation = () => {
+  const [Navbar, setNavbar] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const NavbarRef = ref(db, "Navbar/");
+    onValue(
+      NavbarRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setNavbar(data);
+      },
+      []
+    );
+  });
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: 149 }}>
       <nav className="navbar navbar-expand-lg" style={{}}>
@@ -8,7 +24,7 @@ const NavbarReservation = () => {
             href="index.html"
           >
             <img
-              src="images/coffee-beans.png"
+              src={`data:image/jpeg;base64,${Navbar.logo}`}
               className="navbar-brand-image img-fluid"
               alt
             />
