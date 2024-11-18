@@ -5,7 +5,7 @@ const Navbar = () => {
   const [Navbar, setNavbar] = useState({});
   useEffect(() => {
     const db = getDatabase();
-    const NavbarRef = ref(db, "Navbar");
+    const NavbarRef = ref(db, "Navbar/");
     onValue(
       NavbarRef,
       (snapshot) => {
@@ -24,9 +24,9 @@ const Navbar = () => {
             href="index.html"
           >
             <img
-              src="images/coffee-beans.png" //convert jdi base64
+              src={`data:image/jpeg;base64,${Navbar.logo}`}
               className="navbar-brand-image img-fluid"
-              alt="Barista Cafe Template"
+              alt=""
             />
             Aksara
           </a>
