@@ -29,14 +29,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Steve</h4>
+                  <h4 className="text-white mb-0">{Barista.nama1}</h4>
                   <p className="badge ms-4">
-                    <em>Boss</em>
+                    <em>{Barista.posisi1}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily lives tempor.
-                </p>
+                <p className="text-white mb-0">{Barista.pesan1}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
@@ -51,14 +49,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Sandra</h4>
+                  <h4 className="text-white mb-0">{Barista.nama2}</h4>
                   <p className="badge ms-4">
-                    <em>Manager</em>
+                    <em>{Barista.posisi2}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily lives.
-                </p>
+                <p className="text-white mb-0">{Barista.pesan2}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
@@ -73,14 +69,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Jackson</h4>
+                  <h4 className="text-white mb-0">{Barista.nama3}</h4>
                   <p className="badge ms-4">
-                    <em>Senior</em>
+                    <em>{Barista.posisi3}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily lives.
-                </p>
+                <p className="text-white mb-0">{Barista.pesan3}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
@@ -95,14 +89,12 @@ const Barista = () => {
             <div className="team-block-wrap">
               <div className="team-block-info d-flex flex-column">
                 <div className="d-flex mt-auto mb-3">
-                  <h4 className="text-white mb-0">Michelle</h4>
+                  <h4 className="text-white mb-0">{Barista.nama4}</h4>
                   <p className="badge ms-4">
-                    <em>Barista</em>
+                    <em>{Barista.posisi4}</em>
                   </p>
                 </div>
-                <p className="text-white mb-0">
-                  your favourite coffee daily consectetur.
-                </p>
+                <p className="text-white mb-0">{Barista.pesan4}</p>
               </div>
               <div className="team-block-image-wrap">
                 <img
