@@ -1,4 +1,20 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Review = () => {
+  const [Review, setReview] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const ReviewRef = ref(db, "Review/");
+    onValue(
+      ReviewRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        setReview(data);
+      },
+      []
+    );
+  });
   return (
     <section
       className="reviews-section section-padding section-bg"
@@ -7,8 +23,8 @@ const Review = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12 col-12 text-center mb-4 pb-lg-2">
-            <em className="text-white">Reviews by Customers</em>
-            <h2 className="text-white">Testimonials</h2>
+            <em className="text-white">{Review.judul}</em>
+            <h2 className="text-white">{Review.judul2}</h2>
           </div>
           <div className="timeline">
             <div className="timeline-container timeline-container-left">
@@ -16,7 +32,7 @@ const Review = () => {
                 <div className="reviews-block">
                   <div className="reviews-block-image-wrap d-flex align-items-center">
                     <img
-                      src="images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg"
+                      src={`data:image/jpeg;base64,${Review.foto1}`}
                       className="reviews-block-image img-fluid"
                       alt=""
                     />
@@ -53,7 +69,7 @@ const Review = () => {
                 <div className="reviews-block">
                   <div className="reviews-block-image-wrap d-flex align-items-center">
                     <img
-                      src="images/reviews/senior-man-white-sweater-eyeglasses.jpg"
+                      src={`data:image/jpeg;base64,${Review.foto2}`}
                       className="reviews-block-image img-fluid"
                       alt=""
                     />
@@ -85,7 +101,7 @@ const Review = () => {
                 <div className="reviews-block">
                   <div className="reviews-block-image-wrap d-flex align-items-center">
                     <img
-                      src="images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg"
+                      src={`data:image/jpeg;base64,${Review.foto3}`}
                       className="reviews-block-image img-fluid"
                       alt=""
                     />
