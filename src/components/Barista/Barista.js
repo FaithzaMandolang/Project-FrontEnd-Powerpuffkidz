@@ -38,7 +38,7 @@ const Barista = () => {
               </div>
               <div className="team-block-image-wrap">
                 <img
-                  src="images/team/portrait-elegant-old-man-wearing-suit.jpg"
+                  src={`data:image/jpeg;base64,${Barista.foto1}`}
                   className="team-block-image img-fluid"
                   alt=""
                 />
@@ -58,7 +58,7 @@ const Barista = () => {
               </div>
               <div className="team-block-image-wrap">
                 <img
-                  src="images/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg"
+                  src={`data:image/jpeg;base64,${Barista.foto2}`}
                   className="team-block-image img-fluid"
                   alt=""
                 />
@@ -78,7 +78,7 @@ const Barista = () => {
               </div>
               <div className="team-block-image-wrap">
                 <img
-                  src="images/team/small-business-owner-drinking-coffee.jpg"
+                  src={`data:image/jpeg;base64,${Barista.foto3}`}
                   className="team-block-image img-fluid"
                   alt=""
                 />
@@ -98,7 +98,7 @@ const Barista = () => {
               </div>
               <div className="team-block-image-wrap">
                 <img
-                  src="images/team/smiley-business-woman-working-cashier.jpg"
+                  src={`data:image/jpeg;base64,${Barista.foto4}`}
                   className="team-block-image img-fluid"
                   alt=""
                 />
