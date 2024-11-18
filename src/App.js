@@ -4,7 +4,7 @@ import Reservation from "./components/reservasi";
 function App() {
   return (
     <div>
-      <Home />
+      <Reservation />
     </div>
   );
 }

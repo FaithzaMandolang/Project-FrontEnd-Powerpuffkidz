@@ -103,7 +103,7 @@ const Booking = () => {
                 <div className="col-lg-5 col-12 p-0">
                   <div className="booking-form-image-wrap">
                     <img
-                      src="images/barman-with-fruits.jpg"
+                      src={`data:image/jpeg;base64,${Booking.foto1}`}
                       className="booking-form-image img-fluid"
                       alt=""
                     />
