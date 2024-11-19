@@ -21,10 +21,7 @@ const Navbar = () => {
     <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: 149 }}>
       <nav className="navbar navbar-expand-lg" style={{}}>
         <div className="container">
-          <a
-            className="navbar-brand d-flex align-items-center"
-            href="index.html"
-          >
+          <a className="navbar-brand d-flex align-items-center" href="">
             <img
               src={`data:image/jpeg;base64,${Navbar.logo}`}
               className="navbar-brand-image img-fluid"
@@ -35,13 +32,14 @@ const Navbar = () => {
           <button
             className="navbar-toggler"
             type="button"
+            onClick={() => navigate("/")}
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-lg-auto">
