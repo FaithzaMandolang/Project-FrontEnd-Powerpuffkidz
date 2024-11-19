@@ -93,7 +93,7 @@ const Booking = () => {
                         </div>
                         <div className="col-lg-4 col-md-10 col-8 mx-auto mt-2">
                           <button type="submit" className="form-control">
-                            {Booking.btn}
+                            Submit
                           </button>
                         </div>
                       </div>

@@ -48,7 +48,7 @@ const About = () => {
               href="#barista-team"
               className="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"
             >
-              {About.btn1}
+              Meet Baristas
             </a>
           </div>
         </div>

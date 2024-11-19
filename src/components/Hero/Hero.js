@@ -34,13 +34,13 @@ const Hero = () => {
               className="btn custom-btn custom-border-btn smoothscroll me-3"
               href="#section_2"
             >
-              {Hero.button1}
+              Our Story
             </a>{" "}
             <a
               className="btn custom-btn smoothscroll me-2 mb-2"
               href="#section_3"
             >
-              <strong>{Hero.button2}</strong>
+              <strong>Check Menu</strong>
             </a>
           </div>
         </div>

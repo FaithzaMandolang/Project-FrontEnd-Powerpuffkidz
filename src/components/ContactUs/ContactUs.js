@@ -77,7 +77,7 @@ const ContactUs = () => {
               </div>
               <div className="col-lg-5 col-12 mx-auto mt-3">
                 <button type="submit" className="form-control">
-                  {ContactUs.btn1}
+                  Send Message
                 </button>
               </div>
             </form>
